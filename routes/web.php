@@ -35,9 +35,9 @@ Route::post('/subscribe', function (){
     return redirect()->back();
 });
 
-Route::get('/charts', function (){
-    return view('charts');
-});
+//Route::get('/charts', function (){
+//    return view('charts');
+//});
 
 Auth::routes();
 
