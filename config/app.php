@@ -169,6 +169,8 @@ return [
          */
         Laravel\Tinker\TinkerServiceProvider::class,
         Spatie\Newsletter\NewsletterServiceProvider::class,
+        Fx3costa\LaravelChartJs\Providers\ChartjsServiceProvider::class,
+
 
         /*
          * Application Service Providers...

@@ -34,9 +34,10 @@ Route::post('/subscribe', function (){
 
     return redirect()->back();
 });
-//Route::get('test',function (){
-//    App\User::findOrFail(1)->profile;
-//});
+
+Route::get('/charts', function (){
+    return view('charts');
+});
 
 Auth::routes();
 

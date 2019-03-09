@@ -23,6 +23,7 @@
                     <tr>
                         <td><img src="{{$post->featured}}" alt="" width="90px" height="50px"></td>
                         <td>{{$post->title}}</td>
+
                         <td>
                             <a href="{{route('post.edit', ['id'=>$post->id])}}" class="btn btn-xs btn-info">Edit</a>
                         </td>

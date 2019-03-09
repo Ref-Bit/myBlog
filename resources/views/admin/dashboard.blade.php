@@ -1,9 +1,12 @@
 @extends('layouts.app')
 
+{{--<link rel="stylesheet" type="text/css" href="{{asset('fusioncharts/css/fusiondesign.css')}}">--}}
+{{--<link rel="stylesheet" type="text/css" href="{{asset('fusioncharts/css/style.css')}}">--}}
+
 @section('content')
     <div class="col-lg-3">
         <div class="panel panel-primary">
-            <div class="panel-heading text-center">Published Posts</div>
+            <div class="panel-heading text-center">Published Post</div>
             <div class="panel body">
                 <h1 class="text-center">{{$posts_count}}</h1>
             </div>
@@ -36,10 +39,13 @@
             </div>
         </div>
     </div>
-@endsection
 
 {{--@if (session('status'))--}}
     {{--<div class="alert alert-success">--}}
         {{--{{ session('status') }}--}}
     {{--</div>--}}
 {{--@endif--}}
+
+
+@endsection
+

@@ -21,8 +21,10 @@
                     @foreach($posts as $post)
                     <tr>
                         <td><img src="{{$post->featured}}" alt="" width="90px" height="50px"></td>
-                        <td>{{$post->title}}</td>
-                        <td>{{$post->category->name}}</td>
+
+                        <td><a href="{{route('post.single', ['slug'=>$post->slug])}}">{{$post->title}}</a></td>
+
+                        <td><a href="{{route('category.single', ['id'=>$post->category->id])}}">{{$post->category->name}}</a></td>
 
                         <td>
                             <a href="{{route('post.edit', ['id'=>$post->id])}}" class="btn btn-xs btn-info">Edit</a>
@@ -30,6 +32,7 @@
                         <td>
                             <a href="{{route('post.delete', ['id'=>$post->id])}}" class="btn btn-xs btn-danger">Trash</a>
                         </td>
+
                         <td>{{$post->created_at ? $post->created_at->diffForHumans() : 'no date'}}</td>
                         <td>{{$post->updated_at ? $post->updated_at->diffForHumans() : 'no date'}}</td>
                     </tr>
